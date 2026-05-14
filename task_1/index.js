@@ -35,7 +35,7 @@ total_stock_element.textContent = total_stock;
 remaining_stock_element.textContent = remaining_stock;
 quantity_element.textContent = quantity;
 
-//+++++++++++++++++++++++++++++++++++increment and decrement button functionality
+//+++++++++++++++++++++++++++++++++++ increment and decrement button functionality
 increment_button.addEventListener("click", function () {
   if (quantity < total_stock) {
     quantity++;
