@@ -37,9 +37,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./index.html",
     }),
-    LogAfterCompile, // কাস্টম প্লাগিনটি এখানে যুক্ত করা হয়েছে
+    LogAfterCompile,
   ],
-  // টার্মিনাল ক্লিন রাখার জন্য কনফিগারেশন
   infrastructureLogging: {
     level: "error",
   },
@@ -50,8 +49,8 @@ module.exports = {
     host: "localhost",
     historyApiFallback: true,
     client: {
-      logging: "none", // ব্রাউজার কনসোলের লগ বন্ধ রাখবে
-      overlay: true, // এরর হলে স্ক্রিনে দেখাবে
+      logging: "none",
+      overlay: true,
     },
   },
 };
