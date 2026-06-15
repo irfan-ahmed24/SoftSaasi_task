@@ -15,7 +15,7 @@ function SearchResults({ items }) {
       {items.map((item) => (
         <article
           key={item.id}
-          className="group rounded-3xl border border-white/10 bg-slate-950/55 p-5 shadow-xl shadow-slate-950/25 transition hover:-translate-y-1 hover:border-sky-400/30 hover:bg-slate-950/75"
+          className="group rounded-[1.75rem] border border-white/10 bg-slate-950/55 p-5 shadow-xl shadow-slate-950/25 transition hover:-translate-y-1 hover:border-sky-400/30 hover:bg-slate-950/75"
         >
           <div className="flex items-start justify-between gap-3">
             <div>

@@ -31,8 +31,18 @@ function SearchFilters() {
   } = searchCatalog;
 
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/6 p-4 shadow-2xl shadow-slate-950/30 backdrop-blur md:p-5">
-      <div className="grid gap-4 md:grid-cols-[1.6fr,1fr,1fr,1fr,auto]">
+    <section className="rounded-[2rem] border border-white/10 bg-white/6 p-5 shadow-2xl shadow-slate-950/30 backdrop-blur">
+      <div className="mb-5 space-y-1 border-b border-white/10 pb-4">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200/75">
+          Filters
+        </p>
+        <h2 className="text-2xl font-semibold text-white">Refine products</h2>
+        <p className="text-sm leading-6 text-slate-300">
+          Search and narrow the catalog from this panel.
+        </p>
+      </div>
+
+      <div className="grid gap-4">
         <label className="grid gap-2">
           <span className="text-xs font-medium uppercase tracking-[0.22em] text-sky-200/80">
             Search
@@ -96,13 +106,15 @@ function SearchFilters() {
           </select>
         </label>
 
-        <button
-          type="button"
-          onClick={resetFilters}
-          className="self-end rounded-2xl border border-sky-400/30 bg-sky-400/10 px-4 py-3 text-sm font-semibold text-sky-100 transition hover:border-sky-300/50 hover:bg-sky-400/20"
-        >
-          Reset
-        </button>
+        <div className="pt-1">
+          <button
+            type="button"
+            onClick={resetFilters}
+            className="w-full rounded-2xl border border-sky-400/30 bg-sky-400/10 px-4 py-3 text-sm font-semibold text-sky-100 transition hover:border-sky-300/50 hover:bg-sky-400/20"
+          >
+            Reset filters
+          </button>
+        </div>
       </div>
     </section>
   );
